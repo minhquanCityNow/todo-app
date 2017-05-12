@@ -1,0 +1,12 @@
+<% if @task.errors.any? %>
+  $('.errors').html('');
+  text = '<ul>';
+  <% @task.errors.full_messages.each do |msg| %>
+    text += "<li><%= msg %></li>";
+  <% end %>
+  text += '</ul>';
+  $('.errors').html(text);
+<% else %>
+  $('#task_title').val('');
+  $('#task_content').val('');
+<% end %>

@@ -1,0 +1,46 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+:-webkit-full-screen a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex
+}
+:-moz-full-screen a {
+    display: flex
+}
+:-ms-fullscreen a {
+    display: -ms-flexbox;
+    display: flex
+}
+:fullscreen a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+label {
+  width: 100px;
+}
+
+input[type="text"], textarea {
+  width: 400px;
+  height: 30px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #097;
+  color: white;
+}
+
+.errors {
+  li {
+    color: red;
+    list-style-type: none;
+  }
+}
